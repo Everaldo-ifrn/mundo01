@@ -8,47 +8,45 @@ def desafio001():
  return 'Olá Mundo!'
 
 
-
 def desafio002(nome):
-  print(f'Seja bem-vindo, {nome}!')
+  return f'Seja bem-vindo, {nome}!'
 
 
 def desafio003(n1, n2):
-  s = n1 + n2
-  print(f'{n1} + {n2} = {s}')
+  return f'A soma de {n1} mais {n2} é {n1 + n2}'
 
 
 def desafio004(algo):
   print(f'O tipo primitivo é {type(algo)}')
-  #Ver qual é o tipo primitivo 
+#Ver qual é o tipo primitivo 
   print(f'É numérico? {algo.isnumeric()}')
-# Ver se tem só numérico
+#Ver se tem só numérico
   print(f'E alfabético? {algo.isalpha()}')
-#  Ver se tem só letras
+#Ver se tem só letras
   print(f'Está maiúsculo? {algo.isupper()}')
-#  Ver se tem só tem letras maiúsculas 
+#Ver se tem só tem letras maiúsculas 
   print(f'Está menúsculo? {algo.islower()}')
-#  Ver se tem só letras menusculas
+#Ver se tem só letras menusculas
   print(algo.isascii())
-#
+
   print(f'É um número decimal? {algo.isdecimal()}')
-# Ver se é numero decimal
+#Ver se é numero decimal
   print(f'É digito? {algo.isdigit()}')
 #ver se é digito
   print(algo.isidentifier())
-#
+
   print(algo.isprintable())
-#
+
   print(f'Só tem espacos? {algo.isspace()}')
-# Ver se só tem espaço 
+#Ver se só tem espaço 
   print(f'Está capitalizado? {algo.istitle()}')
 #Ver se a primeria letra está maiúscula
   print(f'É alfanumerico? {algo.isalnum()}')
-#  Ver tem números e se tem letras
+#Ver tem números e se tem letras
 
 
 def desafio005(n):
-  print(f'O antecessor de {n} é {n - 1} \ne sucessor de {n} é {n + 1}')
+  return f'O antecessor de {n} é {n - 1} \nE o sucessor de {n} é {n + 1}'
 
 
 def desafio006(n):
@@ -58,8 +56,7 @@ def desafio006(n):
 
 
 def desafio007(nota_1, nota_2):
-  media = (nota_1 + nota_2) / 2
-  print('Sua media vale:',media)
+  return f'Sua media vale: {(nota_1 + nota_2) / 2}'
 
 
 def desafio008(m):
@@ -84,67 +81,60 @@ def desafio009(n):
 
 
 def desafio010(dinheiro):
-  print(f' Com esse R${dinheiro} você pode comprar US${ dinheiro / 3.27:.2f}')
+  return f'Com esse R${dinheiro} você pode comprar US${ dinheiro / 3.27:.2f}'
 
 
 def desafio011(largura, altura):
   area = altura * largura
-  print(f'A area dessa parede é {area}m^2')
-  print(f'Voce vai precisa de {area / 1 * altura / 2} litros para pintá-la.')
+  print(f'A área dessa parede é {area}m^2')
+  print(f'Você vai precisa de {area / 1 * altura / 2} litros para pintá-la.')
   tinta = area / 2
   print(f'Vai precisar de {tinta}L de tinta para pintar essa parede.')
 
   
-def desafio012(valor):  
-  desconto = valor - (valor * 5 / 100)
-  print(f'Com desconto de 5% esta saindo por R$ {desconto}')
+def desafio012(valor):   
+  return f'Com desconto de 5% esta saindo por R$ {valor - (valor * 5 / 100)}'
 
 
 def desafio013(salario):
-  aumento = salario + (salario * 15 / 100)
-  print(f'Seu salário com 15% de aumento ficou R${aumento}')
+  return f'Seu salário com 15% de aumento ficou R${salario + (salario * 15 / 100)}'
 
 
 def desafio014(c):
-  f = 9 * c / 5 + 32
-  print(f'Essa temperatura em fahrenheit é {f}f')
+  return f'Essa temperatura em fahrenheit é {9 * c / 5 + 32}F'
 
 
 def desafio015(km, dias):
-  pago = (dias * 60) + (km * 0.15)
-  print(f'Você vai ter que pagar R${pago}')
+  return f'Você vai ter que pagar R${(dias * 60) + (km * 0.15)}'
 
 
 def desafio016(n):
-  print(f'O número {n} em sua porção inteira fica: {trunc(n)}')
+  return f'O número {n} em sua porção inteira fica: {trunc(n)}'
   
 
 def desafio017(co, ca):
-  print(f'A hipotenusa é: {hypot(co, ca):.2f}')
+  return f'A hipotenusa é: {hypot(co, ca):.2f}'
 
 
 def desafio018(angulo):
-  print(f'O seno de {angulo} é: {sin(radians(angulo)):.2f}')
-  print(f'O cosseno de {angulo} é: {cos(radians(angulo)):.2f}')
-  print(f'A tangente de {angulo} é: {tan(radians(angulo)):.2f}')
+  print(f'O seno de {angulo} é {sin(radians(angulo)):.2f}')
+  print(f'O cosseno de {angulo} é {cos(radians(angulo)):.2f}')
+  print(f'A tangente de {angulo} é {tan(radians(angulo)):.2f}')
 
 
 def desafio019(alunos):
-  print(f'O aluno que vai apagar o quadro é: {random.choice(alunos)}')
+  return f'O aluno que vai apagar o quadro é: {random.choice(alunos)}'
 
 
 def desafio020(grupo):
   random.shuffle(grupo)
-  print(f'A ordem será {grupo}')
+  return f'A ordem será {grupo}'
 
 
-
-def desafio021():
-  pygame.init()
-  pygame.mixer.music.load('musica.mp3.mp3')
-
-#Ainda não terminou o desafio021 !!!
-#Lembrando de pedir ajuda do pq q o desafio021 não ta funcionando !!!
+#def desafio021():
+#  pygame.init()
+#  pygame.mixer.music.load('musica.mp3.mp3')
+#Não está funcionando!!!
 
 
 def desafio022(nome_completo):
@@ -163,13 +153,12 @@ def desafio023(n):
   print(f'A milhar é {n // 1000 % 10}')
 
 
-
 def desafio024(cidade):
-  print(f'Essa cidade começa com Santo? {cidade.startswith("SANTO")}')
+  return f'Essa cidade começa com Santo? {cidade.startswith("SANTO")}'
 
 
 def desafio025(nome):
-  print(f'O seu nome tem Silva? {"SILVA" in nome.upper()}')
+  return f'O seu nome tem Silva? {"SILVA" in nome.upper()}'
   
 
 def desafio026(frase):
@@ -187,12 +176,11 @@ def desafio027(nome_completo):
 def desafio028(n):
   num = random.randint(0,5)
   if num == n:
-    print('Parabéns, você venceu!!!')
+    return 'Parabéns, você venceu!!!'
   else:
-    print(f'Que pena você perdeu, o número era {num}')
+    return f'Que pena você perdeu, o número era {num}'
 
 
-#Desafio029
 def desafio029(velocidade):
   if velocidade > 80.0:
     print('Você foi multado. Passou do limite de 80km/h')
@@ -203,50 +191,50 @@ def desafio029(velocidade):
 
 def desafio030(num):
   if  num % 2 == 0 :
-    print(f'{num} é um número par')
+    return f'{num} é um número par'
   else:
-    print(f'{num} é um número ímpar')
+    return f'{num} é um número ímpar'
 
 
 def desafio031(distancia):
   if distancia <= 200: 
-   print(f'Você vai pagar de passagem R${0.50 * distancia:.2f}')
+   return f'Você vai pagar de passagem R${0.50 * distancia:.2f}'
   else:
-    print(f'Você vai pagar de passagem R${0.45 * distancia:.2f}')
+    return f'Você vai pagar de passagem R${0.45 * distancia:.2f}'
 
 
 def desafio032(ano):
   if ano % 4 == 0 and ano % 100 != 0 or ano % 400 ==0:
-    print('Esse ano é bissexto')
+    return 'Esse ano é bissexto'
   else:
-    print('Esse ano não é bissexto')
+    return 'Esse ano não é bissexto'
 
-
+   
 def desafio033(n1, n2, n3):
   if n1 > n2 and n1 > n3:
-    maior_numero = n1
-  if n2 > n1 and n2 > n3:
-    maior_numero = n2 
-  if n3 > n1 and n3 > n3:
-    maior_numero = n3
-  print(f'O número {maior_numero} é o maior')
+    print(f'O maior número é {n1}')
+  elif n2 > n1 and n2 > n3:
+    print(f'O maior número é {n2}') 
+  else:
+    print(f'O maior número é {n3}')
   if n1 < n2 and n1 < n3:
-    menor = n1
-  if n2 < n1 and n2 < n3:
-    menor = n2
-  if n3 < n1 and n3 < n2:
-    menor = n3
-  print(f'O número {menor} é o menor')
+    print(f'O menor número é {n1}')
+  elif n2 < n1 and n2 < n3:
+    print(f'O menor número é {n2}')
+  else:
+    print(f'O menor número é {n3}')
+
 
 def desafio034(salario):
   if salario <= 1250:
     aumento = salario + (salario * 15 / 100)
   else:
     aumento = salario + (salario * 10/100)
-  print(f'O aumento vai ser R${aumento:.2f}')
+  return f'O aumento vai ser R${aumento:.2f}'
+
 
 def desafio035(r1, r2, r3):
   if r1 + r2 > r3 and r2 + r3 > r1 and r1 + r2 > r3:
-    print('Sim, elas podem formar um triângulo')
+    return 'Sim, elas podem formar um triângulo'
   else:
-    print('Não, elas não podem formar um triângulo')
+    return 'Não, elas não podem formar um triângulo'
