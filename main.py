@@ -1,4 +1,5 @@
 import mundo01
+
 #Desafio 001
 print(mundo01.desafio001())
 
@@ -24,7 +25,8 @@ mundo01.desafio004(algo)
 print('  ')
 
 #Desafio 005
-print(mundo01.desafio005(int(input('Digite um número inteiro: '))))
+n = int(input('Digite um número inteiro: '))
+print(mundo01.desafio005(n))
 
 print('  ')
 

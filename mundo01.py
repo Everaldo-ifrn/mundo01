@@ -42,7 +42,7 @@ def desafio004(algo):
   print(f'Está capitalizado? {algo.istitle()}')
 #Ver se a primeria letra está maiúscula
   print(f'É alfanumerico? {algo.isalnum()}')
-#Ver tem números e se tem letras
+#Ver se tem números e se tem letras
 
 
 def desafio005(n):
@@ -52,7 +52,7 @@ def desafio005(n):
 def desafio006(n):
   print(f'O dobro de {n} é {n * 2}')
   print(f'O triplo de {n} é {n * 3}')
-  print(f'A raiz quadradade de {n} é {n ** 1/5}')
+  print(f'A raiz quadradade de {n} é {n ** (1/2):.2f}')
 
 
 def desafio007(nota_1, nota_2):
